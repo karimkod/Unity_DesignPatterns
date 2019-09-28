@@ -21,7 +21,7 @@ public class Client : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z))
         {
             var drone = (Drone)enemySpawner.Spawn(dronePrototype);
-            drone.Fly();
+            drone.Fly   ();
         }
     }
 }
