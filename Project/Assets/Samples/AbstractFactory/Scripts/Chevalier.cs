@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShopOwner : INPC
+public class Chevalier : IHuman
 {
    public void Speak()
     {
-        Debug.Log("ShopOwner : Wanna buy something?");
+        Debug.Log("You can't defeat me peasant!");
     }
 }
