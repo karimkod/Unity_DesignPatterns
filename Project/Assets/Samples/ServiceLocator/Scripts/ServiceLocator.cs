@@ -6,7 +6,7 @@ using System;
 public class ServiceLocator : Singleton<ServiceLocator>
 {
 
-    public Dictionary<object, object> register; 
+    private Dictionary<object, object> register; 
 
     override public void Awake()
     {
@@ -24,7 +24,7 @@ public class ServiceLocator : Singleton<ServiceLocator>
     }
 
 
-    private T GetService<T>()
+    public T GetService<T>()
     {
         try 
         {
